@@ -1,0 +1,43 @@
+@import "../../styles/mixins";
+
+.hero {
+  width: 100%;
+  background: url("../../assets/sprites/hero-bg.svg") no-repeat center;
+  background-size: cover;
+  padding-top: 155px;
+}
+
+.container {
+  padding: 0 !important;
+}
+
+.wrapper {
+  @include flex-center-vert;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.title,
+.description {
+  color: #fff;
+}
+
+.title {
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.description {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  max-width: 628px;
+}
+
+.button {
+  margin-top: 50px;
+}

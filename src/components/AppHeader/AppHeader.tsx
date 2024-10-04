@@ -1,27 +1,26 @@
 import s from "./appHeader.module.scss";
-
-import { RoutesList } from "../../app/routes/routes.types";
 import { headerLinksList } from "../../utils/constants/data.constants";
+import { Button } from "../Button/Button";
 
-import Logo from "../../assets/icons/logo.svg?react";
-
-export default function AppHeader() {
+export default function AppHeader({ variant }: { variant?: string }) {
   return (
     <header className={s.header}>
-      <div className="container">
-        <a href={RoutesList.home} className={s.logo}>
-          <Logo />
-        </a>
-        <nav className={s.navigation}>
-          <ul className={s.list}>
-            {headerLinksList.map(({ title, path }) => (
-              <li key={title}>
-                <a href={path}>{title}</a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <button className={s.button}>Бронюй</button>
+      <div className="header-container">
+        <div className={s.wrapper}>
+          {/* <AppLogo variant="mobile" /> */}
+          <nav className={s.navigation}>
+            <ul className={s.list}>
+              {headerLinksList.map(({ title, path }) => (
+                <li className={s.item} key={title}>
+                  <a className={s.link} href={path}>
+                    {title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <Button>Бронюй</Button>
+        </div>
       </div>
     </header>
   );
