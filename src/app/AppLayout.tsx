@@ -8,7 +8,6 @@ export default function AppLayout() {
       <main className="app-main">
         <Outlet />
       </main>
-      {/* <AppFooter/> */}
     </>
   );
 }

@@ -1,0 +1,13 @@
+.card {
+    padding: 30px 40px;
+    -webkit-box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.16);
+    background: #fff;
+    border-radius: 10px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
