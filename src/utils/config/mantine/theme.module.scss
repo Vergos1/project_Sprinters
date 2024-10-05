@@ -1,154 +1,153 @@
 // select styles
 .selectInput {
-    background-color: transparent;
-    border: none;
+  background-color: transparent;
+  border: none;
+  font-weight: 400;
+  font-size: 20px;
+  color: #222;
+
+  &::-webkit-input-placeholder {
     font-weight: 400;
     font-size: 20px;
     color: #222;
+  }
 
-    &::-webkit-input-placeholder {
-        font-weight: 400;
-        font-size: 20px;
-        color: #222;
-    }
+  &::-moz-placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    color: #222;
+  }
 
-    &::-moz-placeholder {
-        font-weight: 400;
-        font-size: 20px;
-        color: #222;
-    }
+  &:-ms-input-placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    color: #222;
+  }
 
-    &:-ms-input-placeholder {
-        font-weight: 400;
-        font-size: 20px;
-        color: #222;
-    }
+  &::-ms-input-placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    color: #222;
+  }
 
-    &::-ms-input-placeholder {
-        font-weight: 400;
-        font-size: 20px;
-        color: #222;
-    }
-
-    &::placeholder {
-        font-weight: 400;
-        font-size: 20px;
-        color: #222;
-    }
+  &::placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    color: #222;
+  }
 }
 
 .selectOption,
 .selectOptions,
 .selectDropdown {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-    -webkit-animation-duration: 0.4s;
-    animation-duration: 0.4s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .selectDropdown {
-    background-color: white;
-    -webkit-box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.16);
-    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.16);
+  background-color: white;
+  -webkit-box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.16);
 
-    &::-webkit-scrollbar {
-        width: 7px;
-        height: 7px;
-        background-color: transparent;
-    }
+  &::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    background-color: transparent;
+  }
 
-    &::-webkit-scrollbar-thumb {
-        background-color: rgb(192, 192, 192);
-        border: 1px solid transparent;
-        background-clip: content-box;
-    }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(192, 192, 192);
+    border: 1px solid transparent;
+    background-clip: content-box;
+  }
 }
 
 .selectOption {
-    padding: 10px 16px;
+  padding: 10px 16px;
+  font-size: 16px;
 }
 
 .selectOptions {
-    padding: 4px 0;
+  padding: 4px 0;
 }
-
-
 
 // date picker styles
 .datePickerInput {
-    border: none;
-    background-color: transparent;
-    font-weight: 400;
-    font-size: 20px;
-    color: #222;
+  border: none;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 20px;
+  color: #222;
 }
 
 .datePickerPlaceholder {
-    font-weight: 400;
-    font-size: 20px;
-    color: #222 !important;
+  font-weight: 400;
+  font-size: 20px;
+  color: #222 !important;
 }
 
 .datePickerInput {
-    padding: 6px 42px;
+  padding: 6px 42px;
 }
 
 // popover styles
 .popoverDropdown {
-    -webkit-box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.16);
-    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.16);
 
-    &::-webkit-scrollbar {
-        width: 7px;
-        height: 7px;
-        background-color: transparent;
-    }
+  &::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    background-color: transparent;
+  }
 
-    &::-webkit-scrollbar-thumb {
-        background-color: rgb(192, 192, 192);
-        border: 1px solid transparent;
-        background-clip: content-box;
-    }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(192, 192, 192);
+    border: 1px solid transparent;
+    background-clip: content-box;
+  }
 
-    -webkit-transition-property: none !important;
+  -webkit-transition-property: none !important;
 
-    -o-transition-property: none !important;
+  -o-transition-property: none !important;
 
-    transition-property: none !important;
-    -webkit-transition-duration: 0.2s !important;
-    -o-transition-duration: 0.2s !important;
-    transition-duration: 0.2s !important;
-    -webkit-transition-timing-function: ease !important;
-    -o-transition-timing-function: ease !important;
-    transition-timing-function: ease !important;
+  transition-property: none !important;
+  -webkit-transition-duration: 0.2s !important;
+  -o-transition-duration: 0.2s !important;
+  transition-duration: 0.2s !important;
+  -webkit-transition-timing-function: ease !important;
+  -o-transition-timing-function: ease !important;
+  transition-timing-function: ease !important;
 
-    -webkit-animation-name: fadeIn !important;
-    animation-name: fadeIn !important;
-    -webkit-animation-duration: 0.4s !important;
-    animation-duration: 0.4s !important;
-    -webkit-animation-fill-mode: both !important;
-    animation-fill-mode: both !important;
+  -webkit-animation-name: fadeIn !important;
+  animation-name: fadeIn !important;
+  -webkit-animation-duration: 0.4s !important;
+  animation-duration: 0.4s !important;
+  -webkit-animation-fill-mode: both !important;
+  animation-fill-mode: both !important;
 }
 
 // animations
 @-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }

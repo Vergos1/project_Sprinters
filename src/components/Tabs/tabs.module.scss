@@ -1,6 +1,7 @@
 @import "../../styles/mixins";
 
 .tabs {
+  padding: 0 20px;
   width: 100%;
   @include flex-center;
   -webkit-box-orient: vertical;
@@ -42,6 +43,12 @@
   }
 }
 
+.buttonSubmit {
+  @include tablet {
+    width: 100%;
+  }
+}
+
 .content {
   width: 100%;
 }
@@ -53,4 +60,11 @@
   -webkit-box-shadow: 0 4px 39px 0 rgba(0, 0, 0, 0.15);
   box-shadow: 0 4px 39px 0 rgba(0, 0, 0, 0.15);
   background-color: #fff;
+
+  @include tablet {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 }

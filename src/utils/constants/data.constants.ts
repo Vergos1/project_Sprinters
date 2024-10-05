@@ -8,6 +8,7 @@ export type HeaderLinkType = {
 };
 
 export type FeaturesItemType = {
+  id: number;
   icon: ReactElement;
   title: string;
   description: string;
@@ -34,24 +35,28 @@ export const headerLinksList: HeaderLinkType[] = [
 
 export const featuresList: FeaturesItemType[] = [
   {
+    id: 1,
     icon: icons.location,
     title: "Доступ до місцязнаходження водія",
     description:
       "Слідкуй за актуальною локацією водія та завжди будь в курсі де зараз Твій бус або відправлена Тобою посилка. Ми не Uber, але теж круто!",
   },
   {
+    id: 2,
     icon: icons.phone,
     title: "Онлайн бронювання у додатку",
     description:
       "Швидке бронювання онлайн! Забудь про сотні дзвінків перед поїздкою!",
   },
   {
+    id: 3,
     icon: icons.info,
     title: "Статус поїздки",
     description:
       "Додаток нагадає про поїздку та повідомить тебе, як тільки водій вирушить в дорогу!",
   },
   {
+    id: 4,
     icon: icons.car,
     title: "Відстеження поїздок",
     description: "Відправив посилку рідним? Відстежуй її у режимі онлайн",

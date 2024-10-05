@@ -3,6 +3,7 @@
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding: 0 20px;
   gap: 32px;
 
   @include tablet {
@@ -11,6 +12,7 @@
 
   @include mobile {
     grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
   }
 }
 
@@ -26,8 +28,20 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
 
+  @include mobile-sm {
+    margin-bottom: 100px;
+    padding: 20px;
+    -webkit-box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+  }
+
   .content {
     @include gap(22px);
+
+    @include mobile-sm {
+      gap: 0;
+    }
   }
 
   .title {
@@ -48,5 +62,42 @@
     width: -moz-max-content;
     width: max-content;
     padding: 13px 28px;
+
+    @include mobile-sm {
+      width: 100%;
+    }
   }
+}
+
+.photo {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.titleMobile {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  color: #222;
+  margin-bottom: 32px;
+}
+
+.selected {
+  color: #0d6efd;
+}
+
+.titleMobileSm {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.descriptionMobile {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #656c72;
+  margin-bottom: 32px;
 }

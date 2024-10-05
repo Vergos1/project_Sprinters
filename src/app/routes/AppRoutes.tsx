@@ -11,7 +11,7 @@ const AdminPage = lazy(() => import("../../pages/AdminPage/AdminPage.tsx"));
 
 const AppRoutes = () => {
   return (
-    <Suspense fallback={<Preloader/>}>
+    <Suspense fallback={<Preloader />}>
       <Routes>
         <Route path={RoutesList.home} element={<AppLayout />}>
           {/*=== home page ===*/}

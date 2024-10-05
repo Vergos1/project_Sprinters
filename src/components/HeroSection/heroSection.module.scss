@@ -1,43 +1,80 @@
 @import "../../styles/mixins";
 
 .hero {
-  width: 100%;
-  background: url("../../assets/sprites/hero-bg.svg") no-repeat center;
-  background-size: cover;
-  padding-top: 155px;
+    width: 100%;
+    background: url("../../assets/sprites/hero-bg.svg") no-repeat center;
+    background-size: cover;
+    padding-top: 155px;
+
+    @include tablet-sm {
+        background: none;
+        padding-top: 120px;
+    }
 }
 
 .container {
-  padding: 0 !important;
+    padding: 0 20px !important;
 }
 
 .wrapper {
-  @include flex-center-vert;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+    @include flex-center-vert;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    @include mobile-sm {
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 32px;
+    }
 }
 
 .title,
 .description {
-  color: #fff;
+    color: #fff;
+}
+
+.titleMobile {
+    font-weight: 700;
+    font-size: 32px;
+    color: #222;
+}
+
+.selected {
+    color: #0d6efd;
 }
 
 .title {
-  font-size: 58px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .description {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  max-width: 628px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    max-width: 628px;
+
+    @include tablet-sm {
+        display: none;
+    }
 }
 
 .button {
-  margin-top: 50px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-top: 50px;
+
+    @include tablet-sm {
+        margin-top: 32px;
+    }
 }

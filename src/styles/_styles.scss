@@ -7,81 +7,85 @@
 @import "actions";
 
 @media (prefers-color-scheme: light) {
-    html {
-        color-scheme: light;
-    }
+  html {
+    color-scheme: light;
+  }
 }
 
 html,
 body {
-    min-height: 100%;
-    max-width: 100vw;
-    color: black;
-    font-family: "Roboto", sans-serif;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+  min-height: 100%;
+  max-width: 100vw;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 
-    &::-webkit-scrollbar {
-        width: 7px;
-        height: 7px;
-        background-color: transparent;
-    }
+  &::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    background-color: transparent;
+  }
 
-    &::-webkit-scrollbar-thumb {
-        background-color: rgb(192, 192, 192);
-        border: 1px solid transparent;
-        background-clip: content-box;
-    }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(192, 192, 192);
+    border: 1px solid transparent;
+    background-clip: content-box;
+  }
 }
 
 .main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    min-height: 100vh;
-    max-width: 100%;
-    overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .container,
 .header-container {
-    margin: 0 auto;
-    max-width: 1340px;
-    width: 100%;
+  margin: 0 auto;
+  max-width: 1340px;
+  width: 100%;
 
-    @include desktop {
-        max-width: 932px;
-    }
+  @include desktop {
+    max-width: 932px;
+  }
 
-    @include tablet {
-        max-width: 728px;
-    }
-
-    @include tablet-sm {
-        max-width: calc(100% - 40px);
-    }
+  @include tablet {
+    max-width: 728px;
+  }
 }
 
 .container {
-    padding: 100px 0;
+  padding: 100px 0;
+
+  @include tablet-sm {
+    padding: 50px 0;
+  }
 }
 
 .header-container {
-    padding: 30px 0;
+  padding: 30px 0;
+
+  @include tablet-sm {
+    padding: 10px 10px;
+  }
 }
 
 .page-container {
-    padding: 0 2%;
+  padding: 0 2%;
 }
 
 // components

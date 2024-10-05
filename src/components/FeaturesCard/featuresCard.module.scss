@@ -12,10 +12,29 @@
   box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.16);
   background: #fff;
   border-radius: 10px;
+
+  @include mobile-sm {
+    text-align: left;
+    padding: 15px 10px;
+    gap: 8.5px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
 }
 
 .icon {
   margin-bottom: 22px;
+
+  @include mobile-sm {
+    margin-bottom: 0;
+
+    svg {
+      max-width: 44px;
+      height: auto;
+    }
+  }
 }
 
 .title {
@@ -24,6 +43,11 @@
   line-height: 140%;
   color: #222;
   margin-bottom: 12px;
+
+  @include mobile-sm {
+    margin-bottom: 2px;
+    font-size: 18px;
+  }
 }
 
 .description {
@@ -32,4 +56,10 @@
   line-height: 140%;
   text-align: center;
   color: #656c72;
+
+  @include mobile-sm {
+    font-weight: 600;
+    font-size: 12px;
+    text-align: left;
+  }
 }
