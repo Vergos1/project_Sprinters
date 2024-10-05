@@ -1,15 +1,15 @@
 import { MantineProvider } from "@mantine/core";
 import { BrowserRouter } from "react-router-dom";
-import { theme } from "../utils/config/theme";
+import { theme } from "../utils/config/mantine/theme";
 
 export default function AppProvider({
-  children,
+    children,
 }: {
-  children: React.ReactNode;
+    children: React.ReactNode;
 }) {
-  return (
-    <MantineProvider theme={theme}>
-      <BrowserRouter>{children}</BrowserRouter>
-    </MantineProvider>
-  );
+    return (
+        <MantineProvider theme={theme} defaultColorScheme="light">
+            <BrowserRouter>{children}</BrowserRouter>
+        </MantineProvider>
+    );
 }

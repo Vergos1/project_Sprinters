@@ -1,0 +1,53 @@
+// select styles
+.selectInput {
+    background-color: transparent;
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+    color: #222;
+
+    &::-webkit-input-placeholder {
+        font-weight: 400;
+        font-size: 20px;
+        color: #222;
+    }
+
+    &::-moz-placeholder {
+        font-weight: 400;
+        font-size: 20px;
+        color: #222;
+    }
+
+    &:-ms-input-placeholder {
+        font-weight: 400;
+        font-size: 20px;
+        color: #222;
+    }
+
+    &::-ms-input-placeholder {
+        font-weight: 400;
+        font-size: 20px;
+        color: #222;
+    }
+
+    &::placeholder {
+        font-weight: 400;
+        font-size: 20px;
+        color: #222;
+    }
+}
+
+// date picker styles
+.datePickerInput {
+    border: none;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 20px;
+    color: #222;
+}
+
+.datePickerPlaceholder {
+    font-weight: 400;
+    font-size: 20px;
+    color: #222 !important;
+}

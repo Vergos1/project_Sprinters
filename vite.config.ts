@@ -7,6 +7,13 @@ export default defineConfig({
   define: {
     "process.env": process.env,
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: "modern",
+      },
+    },
+  },
   server: {
     host: "localhost",
     port: 5173,

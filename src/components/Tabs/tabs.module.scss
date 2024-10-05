@@ -1,0 +1,56 @@
+@import "../../styles/mixins";
+
+.tabs {
+  width: 100%;
+  @include flex-center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.buttonsWrapper {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+
+  .button {
+    padding: 7px 15px;
+    font-weight: 400;
+    font-size: 16px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+    &:first-child {
+      border-top: 1px solid #0d6efd;
+      border-left: 1px solid #0d6efd;
+      border-bottom: 1px solid #0d6efd;
+      border-radius: 10px 0 0 10px;
+    }
+
+    &:last-child {
+      border: 1px solid #0d6efd;
+      border-radius: 0 10px 10px 0;
+    }
+
+    &.active {
+      color: white;
+      background-color: #0d6efd;
+    }
+  }
+}
+
+.content {
+  width: 100%;
+}
+
+.form {
+  @include flex-between;
+  gap: 24px;
+  padding: 24px 30px;
+  -webkit-box-shadow: 0 4px 39px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 39px 0 rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}

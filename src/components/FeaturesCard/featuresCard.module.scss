@@ -1,0 +1,35 @@
+@import "../../styles/mixins";
+
+.card {
+  @include flex-center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px 40px;
+  -webkit-box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.16);
+  background: #fff;
+  border-radius: 10px;
+}
+
+.icon {
+  margin-bottom: 22px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #656c72;
+}

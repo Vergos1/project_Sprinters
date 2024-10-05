@@ -1,46 +1,46 @@
 @import "../../styles/mixins";
 
 .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  width: 100%;
 }
 
 .container {
-    padding: 30px 0;
+  padding: 30px 0;
 }
 
 .wrapper {
-    padding: 8px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+  padding: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 .list {
-    height: 100%;
-    @include flex-center-vert;
-    gap: 50px;
+  height: 100%;
+  @include flex-center-vert;
+  gap: 50px;
 
-    .item {
-        list-style-type: none;
+  .item {
+    list-style-type: none;
+  }
+
+  .link {
+    font-size: 18px;
+    color: #ffffff;
+    -o-transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.8;
     }
-
-    .link {
-        font-size: 18px;
-        color: #ffffff;
-        -o-transition: opacity 0.3s ease;
-        -webkit-transition: opacity 0.3s ease;
-        transition: opacity 0.3s ease;
-
-        &:hover {
-            opacity: 0.8;
-        }
-    }
+  }
 }

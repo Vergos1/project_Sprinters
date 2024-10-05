@@ -8,6 +8,7 @@ interface ButtonProps {
   children: React.ReactNode;
   className?: string;
   style?: React.CSSProperties;
+  type?: "submit" | "reset" | "button";
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -15,11 +16,12 @@ export const Button: React.FC<ButtonProps> = ({
   className,
   style,
   children,
+  type = "button",
 }) => {
   const classNames = `${s.button} ${s[variant]} ${className || ""}`;
 
   return (
-    <button className={classNames} style={style}>
+    <button type={type} className={classNames} style={style}>
       {children}
     </button>
   );
