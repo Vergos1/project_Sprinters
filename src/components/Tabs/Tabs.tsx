@@ -54,7 +54,7 @@ export const Tabs = () => {
       )}
       <div className={s.content}>
         <form action="" className={s.form}>
-          {tabs.map((tab) => activeTab === tab.id && tab.content)}
+          {tabs.map((tab) => activeTab === tab.id && (<div key={tab.id}>{tab.content}</div>))}
           <Button
             disabled={!isValidForm}
             variant="primary"
