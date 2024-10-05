@@ -1,6 +1,10 @@
 .tab {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    &.passengerTab {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
