@@ -5,7 +5,7 @@ import { Button } from "../Button/Button";
 
 export const FeaturesSection = () => {
   return (
-    <div className={s.features}>
+    <div className={`${s.features} animate`}>
       <div className="container">
         <div className={s.wrapper}>
           <div className={s.substandardCard}>

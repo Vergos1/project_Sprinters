@@ -10,7 +10,7 @@ export const CarrierTab = () => {
     const rightSectionIcon = icons.arrowBottom;
 
     return (
-        <div className={s.tab}>
+        <div className={`${s.tab} animate`}>
             <Select
                 placeholder="Звідки?"
                 rightSection={rightSectionIcon}

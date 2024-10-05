@@ -8,9 +8,10 @@ import { icons } from "../../../utils/helper/icons";
 export const PassengerTab = () => {
     const [value, setValue] = useState<Date | null>(null);
     const rightSectionIcon = icons.arrowBottom;
+    const currentDate = new Date();
 
     return (
-        <div className={`${s.tab} ${s.passengerTab}`}>
+        <div className={`${s.tab} ${s.passengerTab} animate`}>
             <Select
                 placeholder="Звідки?"
                 rightSection={rightSectionIcon}
@@ -28,6 +29,7 @@ export const PassengerTab = () => {
             <DatePickerInput
                 leftSection={icons.calendar}
                 rightSection={rightSectionIcon}
+                minDate={currentDate}
                 leftSectionPointerEvents="none"
                 placeholder="Коли?"
                 value={value}

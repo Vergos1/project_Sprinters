@@ -1,6 +1,6 @@
 import s from "./theme.module.scss";
 import { DatePickerInput } from "@mantine/dates";
-import { createTheme, Select } from "@mantine/core";
+import { createTheme, Popover, Select } from "@mantine/core";
 
 export const theme = createTheme({
     components: {
@@ -8,6 +8,9 @@ export const theme = createTheme({
             classNames: {
                 root: s['selectRoot'],
                 wrapper: s['selectWrapper'],
+                dropdown: s['selectDropdown'],
+                options: s['selectOptions'],
+                option: s['selectOption'],
                 input: s['selectInput'],
                 label: s['selectLabel'],
             },
@@ -17,6 +20,11 @@ export const theme = createTheme({
                 root: s['datePickerRoot'],
                 input: s['datePickerInput'],
                 placeholder: s['datePickerPlaceholder'],
+            }
+        }),
+        Popover: Popover.extend({
+            classNames: {
+                dropdown: s['popoverDropdown'],
             }
         })
     },

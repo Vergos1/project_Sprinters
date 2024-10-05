@@ -15,7 +15,7 @@ export const Preloader = () => {
     }, [isLoading]);
 
     return (
-        <div className={s.preloader}>
+        <div className={`${s.preloader} animate`}>
             <span className={s.logo}>
                 {icons.logo}
             </span>

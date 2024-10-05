@@ -4,7 +4,7 @@ import ContentImage from "../../assets/sprites/hero-content-image.svg?react";
 
 export const HeroSection = () => {
   return (
-    <div className={s.hero}>
+    <div className={`${s.hero} animate`}>
       <div className={`${s.container} container`}>
         <div className={s.wrapper}>
           <div className={s.content}>
